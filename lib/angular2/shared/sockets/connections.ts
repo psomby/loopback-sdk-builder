@@ -90,7 +90,7 @@ export class SocketConnection {
       this.on('authenticated', () => {
         this.authenticated = true;
         this.subjects.onAuthenticated.next();
-        this.heartbeater();
+        //this.heartbeater();
       })
       // Listen for authentication
       this.on('unauthorized', (err: any) => {
